@@ -1,0 +1,42 @@
+.banner {
+  min-height: 300px;
+  background-color: rgb(13, 189, 130);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f4f4f4;
+  padding: 0 !important;
+
+}
+.banner-column {
+  text-align: center;
+  margin: auto 0 !important;
+  display:flex;
+  flex-direction: column;
+}
+.banner p {
+  font-size: 1.5rem;
+}
+.banner banner-column input{
+    padding: 0.5rem 1rem !important;
+}
+.banner-column span{
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+.banner-image{
+  position: relative;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.banner-image img{
+  width: 100%;
+  max-height: 300px;
+  position: absolute;
+  object-fit: contain;
+  
+}
+

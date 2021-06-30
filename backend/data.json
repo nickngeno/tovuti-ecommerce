@@ -1,0 +1,122 @@
+[
+{
+name: arsenal,
+type:away,
+year:2020/21,
+imageUrl: https://images.sportsdirect.com/images/products/37730930_3pl.jpg,
+description: Arsenal away shirt 2020 2021,
+price: 50
+},
+{
+name: arsenal,
+type:home,
+year:2020/21,
+imageUrl: https://images.sportsdirect.com/images/products/37730008_3pl.jpg,
+description: Arsenal away shirt 2020 2021,
+price: 50
+},
+{
+name: arsenal,
+type:third,
+year:2020/21,
+imageUrl: https://images.sportsdirect.com/images/products/37734318_3pl.jpg,
+description: Arsenal third shirt 2020 2021,
+price: 50
+},
+{
+name: chelsea,
+type:away,
+year:2020/21,
+imageUrl: https://images.sportsdirect.com/images/products/37855418_3pl.jpg,
+description: Chelsea away shirt 2020 2021,
+price: 50
+},
+{
+name: chelsea,
+type:home,
+year:2020/21,
+imageUrl: https://images.sportsdirect.com/images/products/37858618_3pl.jpg,
+description: Chelsea away shirt 2020 2021,
+price: 50
+},
+{
+name: chelsea,
+type:third,
+year:2020/21,
+imageUrl:https://images.sportsdirect.com/images/products/37855608_3pl.jpg,
+description: Chelsea third shirt 2020 2021,
+price: 50
+},
+{
+name: liverpool,
+type:away,
+year:2020/21,
+imageUrl: https://images.sportsdirect.com/images/products/37840818_3pl.jpg,
+description: liverpool away shirt 2020 2021,
+price: 50
+},
+{
+name: liverpool,
+type:home,
+year:2020/21,
+imageUrl: https://images.sportsdirect.com/images/products/37817308_3pl.jpg,
+description: liverpool away shirt 2020 2021,
+price: 50
+},
+{
+name: liverpool,
+type:third,
+year:2020/21,
+imageUrl:https://images.sportsdirect.com/images/products/37847602_3pl.jpg,
+description: liverpool third shirt 2020 2021,
+price: 50
+},
+{
+name: manchester united,
+type:away,
+year:2020/21,
+imageUrl: https://images.sportsdirect.com/images/products/37728416_3pl.jpg,
+description: manchester united away shirt 2020 2021,
+price: 50
+},
+{
+name: manchester united,
+type:home,
+year:2020/21,
+imageUrl: https://images.sportsdirect.com/images/products/37716608_3pl.jpg,
+description: Authentic manchester united home shirt 2020 2021,
+price: 50
+},
+{
+name: manchester united,
+type:third,
+year:2020/21,
+imageUrl:https://images.sportsdirect.com/images/products/37828230_3pl.jpg,
+description: manchester united third shirt 2020 2021,
+price: 50
+},
+{
+name: manchester city,
+type:away,
+year:2020/21,
+imageUrl: https://images.sportsdirect.com/images/products/37746003_3pl.jpg,
+description: manchester city away shirt 2020 2021,
+price: 50
+},
+{
+name: manchester city,
+type:home,
+year:2020/21,
+imageUrl: https://images.sportsdirect.com/images/products/37747618_3pl.jpg,
+description: Authentic manchester city home shirt 2020 2021,
+price: 50
+},
+{
+name: manchester city,
+type:third,
+year:2020/21,
+imageUrl:https://images.sportsdirect.com/images/products/37846338_3pl.jpg,
+description: manchester city third shirt 2020 2021,
+price: 50
+},
+]
