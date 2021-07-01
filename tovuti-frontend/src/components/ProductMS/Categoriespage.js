@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Row, Col, Button, Table } from "react-bootstrap";
 import "./Categoriespage.css";
-import { AddCategoryModal } from "../Modals/AddCategoryModal";
-import { EditCategoryModal } from "../Modals/EditCategoryModal";
+import { AddCategoryModal } from "../../Modals/AddCategoryModal";
+import { EditCategoryModal } from "../../Modals/EditCategoryModal";
 import { VscGroupByRefType } from "react-icons/vsc";
 import { FiEdit } from "react-icons/fi";
 import { AiOutlineDelete } from "react-icons/ai";

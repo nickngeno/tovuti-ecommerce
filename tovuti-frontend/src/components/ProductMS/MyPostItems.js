@@ -3,7 +3,7 @@ import { Row, Card, Image, Col } from "react-bootstrap";
 import man from "../../Images/man.png";
 import { FiEdit } from "react-icons/fi";
 import { AiOutlineDelete } from "react-icons/ai";
-import { EditProductModal } from "../Modals/EditProductModal";
+import { EditProductModal } from "../../Modals/EditProductModal";
 
 const MyPostItems = () => {
   const [show, setShow] = useState(false);

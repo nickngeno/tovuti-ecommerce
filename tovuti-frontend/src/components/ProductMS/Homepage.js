@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Tab, Button, ListGroup } from "react-bootstrap";
-import { AddProductModal } from "../Modals/AddProductModal";
+import { AddProductModal } from "../../Modals/AddProductModal";
 import MyPostItems from "./MyPostItems";
 import Search from "../Search";
 import "./Homepage.css";

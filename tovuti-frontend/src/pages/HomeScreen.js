@@ -1,11 +1,26 @@
-import React from "react";
-import Banner from "./Banner";
+import React, {useState, useEffect} from "react";
+import Banner from "../components/Banner";
 import { Container, Row, Col, Card, ListGroup } from "react-bootstrap";
 import "./HomeScreen.css";
-import PostItem from "./PostItem";
-import Footer from "./Footer";
+import PostItem from "../components/PostItem";
+import Footer from "../components/Footer";
+import axios from 'axios'
 
 const HomeScreen = () => {
+
+  const [items, setItems] = useState([])
+  console.log(items)
+
+  useEffect (() =>{
+   axios('http://localhost:5000/jerseys/list')
+   .then(res => {
+     setItems(res.data)
+
+   }).catch(error =>{
+     console.log(error)
+   })
+
+  },[])
   return (
     <>
       <Banner />
@@ -25,7 +40,7 @@ const HomeScreen = () => {
             </Card>
           </Col>
           <Col md={9}>
-            <PostItem />
+            <PostItem items = {items} />
           </Col>
         </Row>
       </Container>

@@ -17,7 +17,6 @@ const Navigation = () => {
           <Nav>
             <Nav.Link href="#home">Login</Nav.Link>
             <Nav.Link href="#features">SignUp</Nav.Link>
-            <Nav.Link className="btn btn-warning" href="#features">SELL</Nav.Link>
             <Nav.Link href="/cart"><BiCartAlt />Cart</Nav.Link>
           </Nav>
         </Navbar.Collapse>

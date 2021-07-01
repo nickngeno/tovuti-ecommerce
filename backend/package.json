@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "data-import":"node ./data/jerseySeeder.js"
+    "data-import": "node ./data/jerseySeeder.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
