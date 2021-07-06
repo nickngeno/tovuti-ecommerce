@@ -1,29 +1,23 @@
-import React, {useState, useEffect} from "react";
+import React, {useEffect} from "react";
 import Banner from "../components/Banner";
 import { Container, Row, Col, Card, ListGroup } from "react-bootstrap";
 import "./HomeScreen.css";
 import PostItem from "../components/PostItem";
 import Footer from "../components/Footer";
-import axios from 'axios'
 import {Spinner} from 'react-bootstrap'
+import {useSelector, useDispatch} from 'react-redux'
+import {getAllProducts} from '../redux/actions/productActions'
 
 const HomeScreen = () => {
 
-  const [items, setItems] = useState([])
-  const [loading, setLoading] = useState(false)
-  console.log(items)
+  const state = useSelector(state => state.allProducts)
+  const { loading,error, allProducts} = state
+  const dispatch = useDispatch()
 
-  useEffect (() =>{
-    setLoading(true)
-   axios('http://localhost:5000/jerseys/list')
-   .then(res => {
-     setItems(res.data)
-      setLoading(false)
-   }).catch(error =>{
-     console.log(error)
-   })
+  useEffect(()=>{
+    dispatch(getAllProducts())
+  },[dispatch])
 
-  },[])
   return (
     <>
       <Banner />
@@ -43,8 +37,9 @@ const HomeScreen = () => {
             </Card>
           </Col>
           <Col md={9}>
-            {loading &&  (<div className="spinner-div"><Spinner animation="border" variant="secondary" /></div>)}
-            <PostItem items = {items} />
+            {loading ?  (<div className="spinner-div"><Spinner animation="border" variant="secondary" /></div>) :error ? <h2>{error}</h2> :
+            <PostItem items = {allProducts} />}
+            
           </Col>
         </Row>
       </Container>

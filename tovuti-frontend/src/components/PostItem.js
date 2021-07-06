@@ -1,7 +1,6 @@
 import React from "react";
 import { Card, Image } from "react-bootstrap";
 import "./PostItem.css";
-// import man from "../Images/man.png";
 import { Link } from "react-router-dom";
 import { FiEdit } from "react-icons/fi";
 
