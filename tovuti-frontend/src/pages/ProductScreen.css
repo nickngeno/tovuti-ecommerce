@@ -1,8 +1,21 @@
-.product-details{
-    margin-top: 1rem;
+.product-details {
+  margin-top: 1rem;
 }
-.card-image{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.5rem;
+.card-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.price-details-card .form {
+  padding: 2rem 0;
+}
+.price-details-card label {
+    margin-right: 3rem;
+}
+.price-details-card select{
+    width: 100px;
+}
+.price-details-card .card-title{
+    font-size: 2rem;
+    
 }

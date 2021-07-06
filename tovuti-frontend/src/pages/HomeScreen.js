@@ -5,17 +5,20 @@ import "./HomeScreen.css";
 import PostItem from "../components/PostItem";
 import Footer from "../components/Footer";
 import axios from 'axios'
+import {Spinner} from 'react-bootstrap'
 
 const HomeScreen = () => {
 
   const [items, setItems] = useState([])
+  const [loading, setLoading] = useState(false)
   console.log(items)
 
   useEffect (() =>{
+    setLoading(true)
    axios('http://localhost:5000/jerseys/list')
    .then(res => {
      setItems(res.data)
-
+      setLoading(false)
    }).catch(error =>{
      console.log(error)
    })
@@ -27,7 +30,7 @@ const HomeScreen = () => {
       <Container className="homescreen-content">
         <Row>
           <Col md={3}>
-            <Card style={{ width: "18rem" }}>
+            <Card >
               <Card.Header>
                 <strong>Featured Clubs</strong>
               </Card.Header>
@@ -40,6 +43,7 @@ const HomeScreen = () => {
             </Card>
           </Col>
           <Col md={9}>
+            {loading &&  (<div className="spinner-div"><Spinner animation="border" variant="secondary" /></div>)}
             <PostItem items = {items} />
           </Col>
         </Row>

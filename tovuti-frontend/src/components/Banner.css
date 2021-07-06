@@ -1,5 +1,5 @@
 .banner {
-  min-height: 300px;
+  min-height: 350px;
   background-color: rgb(13, 189, 130);
   display: flex;
   justify-content: center;
@@ -27,14 +27,13 @@
 }
 .banner-image{
   position: relative;
-  height: 300px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 .banner-image img{
   width: 100%;
-  max-height: 300px;
   position: absolute;
   object-fit: contain;
   

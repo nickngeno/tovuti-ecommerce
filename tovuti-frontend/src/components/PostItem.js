@@ -13,7 +13,7 @@ const PostItem = ({ items }) => {
           <Card key={item._id}>
             <Image src={item.imageUrl} />
             <Card.Body>
-              <Card.Title>{item.name}</Card.Title>
+              <Card.Title>{item.name[0].toUpperCase()+item.name.slice(1)}</Card.Title>
               <Card.Text>
                 {item.description}
               </Card.Text>

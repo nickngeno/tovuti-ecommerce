@@ -1,4 +1,10 @@
 .homescreen-content{
-    margin-top: 2rem;
-    padding-top:2rem ;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+.spinner-div{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
