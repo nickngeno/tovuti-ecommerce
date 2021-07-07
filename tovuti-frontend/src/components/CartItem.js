@@ -1,43 +1,39 @@
 import React from "react";
-import { Row, Col, Image, Card, Form } from "react-bootstrap";
-import man from "../Images/man.png";
+import { Row, Col, Image, Card,Button } from "react-bootstrap";
 import { AiOutlineDelete } from "react-icons/ai";
 import { Link } from "react-router-dom";
-
-const CartItem = () => {
+import { useDispatch } from "react-redux";
+import { removeFromCart } from "../redux/actions/cartActions";
+const CartItem = ({ cart }) => {
+  const dispatch =useDispatch()
   return (
     <>
-      <Card className=" mb-3">
-        <Row className="no-gutters">
-          <Col md={4} className="img-div">
-            <Image src={man} />
-          </Col>
-          <Col md={8}>
-            <Card.Body>
-              <Card.Title>
-                <Link to={`/productDetails/${1111}`}>Dark Card Title</Link>
-              </Card.Title>
-              <Card.Subtitle>Ksh 5,000</Card.Subtitle>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-              <Form className="row">
-                <Form.Group controlId="SelectCustom">
-                  <Form.Label>Quantity</Form.Label>
-                  <Form.Control as="select" custom>
-                    <option>1</option>
-                    <option>2</option>
-                  </Form.Control>
-                </Form.Group>
-              </Form>
-              <Card.Link className="btn btn-outline-danger">
-                <AiOutlineDelete /> Delete
-              </Card.Link>
-            </Card.Body>
-          </Col>
-        </Row>
-      </Card>
+      {cart.map((item) => (
+        <Card key={item.product_id} className=" mb-3">
+          <Row className="no-gutters">
+            <Col md={4} className="img-div">
+              <Image src={item.imageUrl} />
+            </Col>
+            <Col md={8}>
+              <Card.Body>
+                <Card.Title>
+                  <Link to={`/productDetails/${item.product_id}`}>
+                    {item.name}
+                  </Link>
+                </Card.Title>
+                <Card.Subtitle>Price ${item.price}</Card.Subtitle>
+                <Card.Text>{item.description}</Card.Text>
+                <Card.Text>
+                  Quantity: <strong>{item.qty}</strong>
+                </Card.Text>
+                <Button className="btn btn-danger" onClick={() => dispatch(removeFromCart(item.product_id))} >
+                  <AiOutlineDelete /> Delete
+                </Button>
+              </Card.Body>
+            </Col>
+          </Row>
+        </Card>
+      ))}
     </>
   );
 };

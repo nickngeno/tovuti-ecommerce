@@ -1,6 +1,5 @@
 require("dotenv").config()
 const mongoose = require("mongoose")
-const { Error } = require("mongoose")
 const jerseyData= require('../data.json')
 const Jersey = require('../models/jerseyModel')
 

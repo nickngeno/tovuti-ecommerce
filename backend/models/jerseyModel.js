@@ -5,7 +5,8 @@ const jerseySchema = new mongoose.Schema({
     type:String,
     year: String,
     imageUrl: String,
-    description: String
+    description: String,
+    price: Number
 })
 
 const Jersey = mongoose.model("Jersey", jerseySchema)
