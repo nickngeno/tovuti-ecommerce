@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card,Breadcrumb } from "react-bootstrap";
 import "./CartScreen.css";
 import CartItem from "../components/CartItem";
 import { useSelector } from "react-redux";
@@ -22,6 +22,10 @@ const CartScreen = () => {
   return (
     <>
       <Container className="container-div">
+      <Breadcrumb>
+          <Breadcrumb.Item> <Link to="/">Home</Link></Breadcrumb.Item>
+          <Breadcrumb.Item active>Mycart</Breadcrumb.Item>
+        </Breadcrumb>
         <Row>
           <h3>My Cart:</h3>
           <Col md={8} className="left-div">
